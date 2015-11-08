@@ -30,6 +30,7 @@
 ;;; Dependencies
 
 (require 'ox)
+(require 'ox-html)
 
 
 ;;; Define Back-End
@@ -50,7 +51,13 @@
     (table . org-hatena-table)
     (table-cell . org-hatena-table-cell)
     (table-row . org-hatena-table-row)
-    (template . org-hatena-template))
+    (template . org-hatena-template)
+    (bold . org-html-bold)
+    (italic . org-html-italic)
+    (underline . org-html-underline)
+    (verbatim . org-html-verbatim)
+    (code . org-html-code)
+    (strike-through . org-html-strike-through))
   :menu-entry
   '(?b "Export to Hatena Notation"
        ((?B "As Hatena Notation buffer" org-hatena-export-as-hatena)
